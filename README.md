@@ -10,7 +10,7 @@
 
 ### Home
 
-![Wireframe of Home page](wireframes/home.png)
+![Wireframe of Home page](wireframes/Home.png)
 
 Header - Forgot header(?)
 
