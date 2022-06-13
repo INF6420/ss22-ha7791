@@ -1,0 +1,13 @@
+/* I know CSS is not required in this assignment yet, but I just wanted a quick background. */
+body {
+  background: rgb(195, 195, 195);
+  background: radial-gradient(
+    circle,
+    rgba(195, 195, 195, 1) 0%,
+    rgb(26, 119, 225) 100%
+  );
+}
+
+li {
+  list-style: none;
+}
