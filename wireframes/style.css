@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(150, 141, 141, 1) 0%
+  );
+  margin: auto;
+  width: 60%;
+  padding: 0px;
+  font-family: Papyrus, fantasy;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+
+/* Shared Navbar */
+header nav {
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgb(255, 255, 255) 0%,
+    rgba(47, 43, 43, 1) 0%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+/* Shared Navbar color change on hover. */
+header nav a:hover {
+  background-color: rgb(119, 119, 119);
+}
+
+/* Main Content */
+main {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgb(174, 175, 238) 0%,
+    rgba(208, 208, 208, 1) 0%
+  );
+}
+
+/* Footer Content */
+footer {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(47, 43, 43, 1) 0%
+  );
+}
+
+/* Shared Lists */
+ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0px;
+  overflow: hidden;
+}
+/* Shared Navbar List Elements  */
+header li {
+  float: left;
+}
+/* Shared Footer List Elements */
+footer li {
+  float: right;
+}
+/* Shared List Links */
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  text-decoration: none;
+}
+
+/* Index "Home" Divs */
+.div-index {
+  background-image: url("Images/paintbrush.png");
+  height: 500px;
+}
+
+/* Forgot what this was for. */
+/* p {
+    text-align: center;    
+} */
+
+/* Contact Page Divs */
+.contact-div {
+  display: inline-block;
+  padding: 3rem 3rem;
+  margin: 5rem 0rem;
+  word-break: break-all;
+  /* white-space: pre-line; */
+}
+/* Contact h1s */
+.contact-h1 {
+  padding-bottom: 10%;
+}
+
+/* About Me Divs */
+.about-div {
+  margin: auto;
+  width: 50%;
+  padding: 25px;
+  overflow: hidden;
+}
+/* About Me "Bio" Paragraph Text */
+.p-about {
+  display: inline-block;
+  margin: 5%;
+}
+
+/* Gallery - Forgot what this was but turned out to be unnecessary(?) */
+.gallery-nav {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: auto;
+  max-width: 100%;
+}
+/* Gallery "Secondary" Navbar List*/
+.gallery-nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  /* margin: 0; */
+  /* padding: 0; */
+  overflow: hidden;
+  background-color: #333;
+}
+/* Gallery "Secondary" Navbar List Elements*/
+.gallery-nav li {
+  color: white;
+  text-align: center;
+}
+/* Gallery "Secondary" Navbar List Buttons*/
+.gallery-nav button {
+  float: left;
+  background-color: #041666;
+  color: white;
+  padding: 25px 140px;
+  display: inline-flex;
+  font-family: Papyrus, fantasy;
+  font-size: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  /* width: 100%; Left this here just in case */
+  height: 100%;
+  max-width: 100%;
+}
+/* Button changes color on hover. */
+.gallery-nav button:hover {
+  background-color: rgb(15, 15, 61);
+}
+/* For Gallery images. */
+.row {
+  display: flex;
+}
+/* For Gallery images. */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
