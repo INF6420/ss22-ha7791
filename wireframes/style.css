@@ -91,45 +91,21 @@ li a {
 }
 
 h1 {
-  padding: 10%;
+  padding: 5%;
   font-size: 40px;
 }
 
-/* Forgot what this was for. */
-/* p {
-    text-align: center;    
-} */
-
 /* Contact Page Divs */
 .contact-div {
-  display: inline-block;
-  padding: 1rem;
-  margin: 5rem 10rem;
-}
+  margin: auto;
+  width: 50%;
 
-/* Contact Error Color Codes */
-.input-control input:focus {
-  outline: 0;
-}
-
-.input-control.success input {
-  border-color: green;
-}
-
-.input-control.error input {
-  border-color: red;
-}
-
-.input-control .error {
-  color: red;
-  font-size: 15px;
-  height: 13px;
-  padding-bottom: 50px;
+  padding: 10px;
 }
 
 /* Contact h1s */
 .contact-h1 {
-  padding-top: 10;
+  padding-top: 5%;
   padding-bottom: 0;
 }
 
@@ -141,18 +117,22 @@ label {
 
 /* Contact Inputs */
 .form-input {
-  border: 2px solid black;
-  font-size: 14px;
-  font-weight: 400;
+  border: 2px solid #ccc;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400px;
   padding: 1em;
   margin-bottom: 1.5em;
   width: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-/* .form-input:focus {
+/* Contact Input Hover */
+.form-input:focus {
   outline: none;
-  border: 2px solid red;
-} */
+  border: 2px solid rgb(43, 99, 172);
+}
 
 /* Contact Button */
 [type="submit"] {
@@ -165,16 +145,34 @@ label {
   width: 100%;
 }
 
+/* Contact Button Hover */
+[type="submit"]:hover {
+  background: #041666;
+}
+
 /* Contact Text Box */
 textarea {
   height: 150px;
   resize: vertical;
 }
 
+/* Contact Error */
+.error {
+  border-color: #c62828;
+}
+
+/* Contact Error Message */
+.error-message {
+  margin-top: -1em;
+  margin-bottom: 1em;
+  color: #c62828;
+}
+
 /* About Me Header */
 .h1-about {
   text-align: left;
-  padding-top: 10;
+  padding-top: 5%;
+  padding-bottom: 1%;
 }
 
 /* About Me Divs */
@@ -216,7 +214,7 @@ textarea {
 /* Gallery "Secondary" Navbar List Buttons*/
 .gallery-nav button {
   float: left;
-  background-color: #041666;
+  background-color: rgba(47, 43, 43, 1);
   color: white;
   padding: 25px 140px;
   display: inline-flex;
@@ -241,3 +239,5 @@ textarea {
   flex: 33.33%;
   padding: 5px;
 }
+
+/* ------------------------------- */
