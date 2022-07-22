@@ -117,7 +117,7 @@ label {
 
 /* Contact Inputs */
 .form-input {
-  border: 2px solid #ccc;
+  border: 2px solid rgb(255, 255, 255);
   font-family: sans-serif;
   font-size: 16px;
   font-weight: 400px;
