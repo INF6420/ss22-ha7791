@@ -13,7 +13,7 @@ body {
   );
   margin: auto;
   width: 60%;
-  padding: 0px;
+  padding: 0;
   font-family: Papyrus, fantasy;
   font-size: 20px;
   font-style: normal;
@@ -64,7 +64,7 @@ footer {
 ul {
   list-style-type: none;
   margin: auto;
-  padding: 0px;
+  padding: 0;
   overflow: hidden;
 }
 /* Shared Navbar List Elements  */
@@ -90,29 +90,96 @@ li a {
   height: 500px;
 }
 
-/* Forgot what this was for. */
-/* p {
-    text-align: center;    
-} */
+h1 {
+  padding: 5%;
+  font-size: 40px;
+}
 
 /* Contact Page Divs */
 .contact-div {
-  display: inline-block;
-  padding: 3rem 3rem;
-  margin: 5rem 0rem;
-  word-break: break-all;
-  /* white-space: pre-line; */
+  margin: auto;
+  width: 50%;
+
+  padding: 10px;
 }
+
 /* Contact h1s */
 .contact-h1 {
-  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-bottom: 0;
+}
+
+/* Contact label */
+label {
+  display: block;
+  font-weight: 700;
+}
+
+/* Contact Inputs */
+.form-input {
+  border: 2px solid #ccc;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400px;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  width: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Contact Input Hover */
+.form-input:focus {
+  outline: none;
+  border: 2px solid rgb(43, 99, 172);
+}
+
+/* Contact Button */
+[type="submit"] {
+  background-color: rgba(47, 43, 43, 1);
+  color: white;
+  padding: 10px;
+  font-family: Papyrus, fantasy;
+  font-size: 25px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Contact Button Hover */
+[type="submit"]:hover {
+  background: #041666;
+}
+
+/* Contact Text Box */
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+/* Contact Error */
+.error {
+  border-color: #c62828;
+}
+
+/* Contact Error Message */
+.error-message {
+  margin-top: -1em;
+  margin-bottom: 1em;
+  color: #c62828;
+}
+
+/* About Me Header */
+.h1-about {
+  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 1%;
 }
 
 /* About Me Divs */
 .about-div {
   margin: auto;
-  width: 50%;
-  padding: 25px;
+  width: 75%;
+  padding: 5px;
   overflow: hidden;
 }
 /* About Me "Bio" Paragraph Text */
@@ -147,7 +214,7 @@ li a {
 /* Gallery "Secondary" Navbar List Buttons*/
 .gallery-nav button {
   float: left;
-  background-color: #041666;
+  background-color: rgba(47, 43, 43, 1);
   color: white;
   padding: 25px 140px;
   display: inline-flex;
@@ -172,3 +239,5 @@ li a {
   flex: 33.33%;
   padding: 5px;
 }
+
+/* ------------------------------- */
