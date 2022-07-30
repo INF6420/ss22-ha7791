@@ -22,32 +22,43 @@ body {
   line-height: 26.4px;
 }
 
+/* ----------------------------------- */
+
 /* Shared Navbar */
-header nav {
+nav {
   background: rgb(255, 255, 255);
   background: radial-gradient(
     circle,
     rgb(255, 255, 255) 0%,
     rgba(47, 43, 43, 1) 0%
   );
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  color: antiquewhite;
+  overflow: hidden;
+  height: auto;
 }
+
 /* Shared Navbar color change on hover. */
-header nav a:hover {
+nav a:hover {
   background-color: rgb(119, 119, 119);
 }
 
+.nav-link {
+  color: antiquewhite;
+  font-size: larger;
+}
+
+/* ----------------------------------- */
+
 /* Main Content */
-main {
+.container {
   background: rgb(238, 174, 202);
   background: radial-gradient(
     circle,
     rgb(174, 175, 238) 0%,
     rgba(208, 208, 208, 1) 0%
   );
+  background-image: url("Images/blackwood.png");
+  overflow: hidden;
 }
 
 /* Footer Content */
@@ -60,6 +71,14 @@ footer {
   );
 }
 
+/* Footer's SVG Social Media Logos */
+.filter {
+  filter: invert(100%) sepia(0%) saturate(2476%) hue-rotate(86deg)
+    brightness(118%) contrast(119%);
+}
+
+/* ----------------------------------- */
+
 /* Shared Lists */
 ul {
   list-style-type: none;
@@ -67,14 +86,22 @@ ul {
   padding: 0;
   overflow: hidden;
 }
+
 /* Shared Navbar List Elements  */
 header li {
   float: left;
 }
+
 /* Shared Footer List Elements */
 footer li {
   float: right;
 }
+
+.filter {
+  width: 50px;
+  height: 50px;
+}
+
 /* Shared List Links */
 li a {
   display: inline-block;
@@ -84,29 +111,39 @@ li a {
   text-decoration: none;
 }
 
-/* Index "Home" Divs */
-.div-index {
-  background-image: url("Images/paintbrush.png");
-  height: 500px;
-}
+/* ----------------------------------- */
 
 h1 {
   padding: 5%;
-  font-size: 40px;
+  margin: 1%;
+  color: antiquewhite;
 }
+
+.h1andlabel {
+  background-color: rgba(47, 43, 43, 1);
+  color: antiquewhite;
+  padding: 1%;
+  border: white;
+  border-style: ridge;
+}
+
+.h1andlabel2 {
+  background-color: rgba(47, 43, 43, 1);
+  color: antiquewhite;
+  padding: 1%;
+  margin: 100px;
+  float: right;
+  border: white;
+  border-style: ridge;
+}
+
+/* ----------------------------------- */
 
 /* Contact Page Divs */
 .contact-div {
   margin: auto;
   width: 50%;
-
   padding: 10px;
-}
-
-/* Contact h1s */
-.contact-h1 {
-  padding-top: 5%;
-  padding-bottom: 0;
 }
 
 /* Contact label */
@@ -140,14 +177,17 @@ label {
   color: white;
   padding: 10px;
   font-family: Papyrus, fantasy;
-  font-size: 25px;
+  font-size: 30px;
   cursor: pointer;
   width: 100%;
+  border: white;
+  border-style: ridge;
+  overflow: hidden;
 }
 
 /* Contact Button Hover */
 [type="submit"]:hover {
-  background: #041666;
+  background: rgb(43, 99, 172);
 }
 
 /* Contact Text Box */
@@ -168,6 +208,8 @@ textarea {
   color: #c62828;
 }
 
+/* ----------------------------------- */
+
 /* About Me Header */
 .h1-about {
   text-align: left;
@@ -177,67 +219,91 @@ textarea {
 
 /* About Me Divs */
 .about-div {
+  background: rgb(255, 255, 255) 0%;
   margin: auto;
   width: 75%;
-  padding: 5px;
+  padding: auto;
   overflow: hidden;
 }
+
 /* About Me "Bio" Paragraph Text */
 .p-about {
   display: inline-block;
   margin: 5%;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
 }
 
-/* Gallery - Forgot what this was but turned out to be unnecessary(?) */
-.gallery-nav {
-  list-style-type: none;
-  margin: auto;
-  padding: 0;
-  overflow: auto;
-  max-width: 100%;
+.p-about2 {
+  display: inline-block;
+  margin: 5%;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
 }
-/* Gallery "Secondary" Navbar List*/
-.gallery-nav ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  /* margin: 0; */
-  /* padding: 0; */
-  overflow: hidden;
-  background-color: #333;
+
+/* ----------------------------------- */
+
+/* Gallery Buttons*/
+
+/* Gallery Button Container */
+#myBtnContainer {
+  float: center;
+  max-width: fit-content;
+  padding: 10px;
 }
-/* Gallery "Secondary" Navbar List Elements*/
-.gallery-nav li {
-  color: white;
-  text-align: center;
-}
-/* Gallery "Secondary" Navbar List Buttons*/
-.gallery-nav button {
-  float: left;
-  background-color: rgba(47, 43, 43, 1);
-  color: white;
-  padding: 25px 140px;
-  display: inline-flex;
-  font-family: Papyrus, fantasy;
-  font-size: 20px;
-  cursor: pointer;
-  overflow: hidden;
-  /* width: 100%; Left this here just in case */
-  height: 100%;
-  max-width: 100%;
-}
-/* Button changes color on hover. */
-.gallery-nav button:hover {
-  background-color: rgb(15, 15, 61);
-}
+
 /* For Gallery images. */
 .row {
-  display: flex;
-}
-/* For Gallery images. */
-.column {
-  flex: 33.33%;
-  padding: 5px;
+  margin: 8px -16px;
 }
 
-/* ------------------------------- */
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  background-color: rgba(47, 43, 43, 1);
+  font-family: Papyrus, fantasy;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+/* Add a different background and text color on mouse-over */
+.btn:hover {
+  background-color: #7584c6;
+  color: white;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+/* ----------------------------------- */
